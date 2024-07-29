@@ -13,6 +13,7 @@ import java.lang.reflect.Field;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.instanceOf;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
 @ExtendWith(ResultAnalyzer.class)
@@ -36,7 +37,7 @@ public class MainTest {
         rectangle = new Rectangle(1,2);
         cuboid = new Cuboid(1, 2, 3);
         employee = new Employee(1, "Jane Doe", 20000);
-        hrManager = new HRManager(1, "John Doe", 120000);
+        hrManager = new HRManager(1, "John Doe", 120000, 5, 5, 5);
         juniorDeveloper = new JuniorDeveloper(1, "Junior Doe", 45000);
         midDeveloper = new MidDeveloper(1, "Mid Doe", 60000);
         seniorDeveloper = new SeniorDeveloper(1, "Senior Doe", 100000);
